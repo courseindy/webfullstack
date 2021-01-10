@@ -3,7 +3,7 @@ var cors = require("cors");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 
-var mongo_url = "mongodb://root:1q2W3e4r@localhost/webfullstack";
+var mongo_url = "mongodb://root:1q2W3e4r@localhost:27017/webfullstack"; 
 mongoose.Promise = global.Promise;
 mongoose.connect (mongo_url, { useNewUrlParser: true}).then(
     ()=> {
